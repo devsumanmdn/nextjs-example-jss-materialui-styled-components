@@ -7,8 +7,16 @@ import { withStyles } from "@material-ui/core/styles";
 import Link from "next/link";
 import styled from "styled-components";
 
+import StyledButton from "../src/StyledButton";
+
 const StyledTypography = styled(Typography)`
-  color: palevioletred;
+  && {
+    color: blueviolet;
+    font-family: Roboto Mono;
+    > span {
+      color: unset;
+    }
+  }
 `;
 
 const styles = theme => ({
@@ -24,13 +32,12 @@ function About(props) {
   return (
     <div className={classes.root}>
       <StyledTypography variant="h4" gutterBottom>
-        Material-UI Typography with styled-components
+        I like monoSpace fonts .
       </StyledTypography>
       <Typography gutterBottom />
-      <Link href="/">Home</Link>
-      <Button variant="contained" color="primary">
-        Do nothing button
-      </Button>
+      <Link href="/">
+        <StyledButton>Go to Home</StyledButton>
+      </Link>
     </div>
   );
 }

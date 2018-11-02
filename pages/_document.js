@@ -23,12 +23,12 @@ class MyDocument extends Document {
             content={pageContext.theme.palette.primary.main}
           />
           <link
+            href="https://fonts.googleapis.com/css?family=Roboto+Mono"
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500"
           />
+          {this.props.styleTags}
         </Head>
         <body>
-          {this.props.styleTags}
           <Main />
           <NextScript />
         </body>

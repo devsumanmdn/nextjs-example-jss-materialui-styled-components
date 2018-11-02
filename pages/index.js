@@ -7,6 +7,8 @@ import { withStyles } from "@material-ui/core/styles";
 import Link from "next/link";
 import styled from "styled-components";
 
+import StyledButton from "../src/StyledButton";
+
 const StyledTypography = styled(Typography)`
   && {
     color: palevioletred;
@@ -26,13 +28,12 @@ function About(props) {
   return (
     <div className={classes.root}>
       <StyledTypography variant="h4" gutterBottom>
-        Material-UI Typography with styled-components :fire:
+        Material-UI with styled-components
       </StyledTypography>
       <Typography gutterBottom />
-      <Link href="/about">About</Link>
-      <Button variant="contained" color="primary">
-        Do nothing button
-      </Button>
+      <Link href="/about">
+        <StyledButton>Go to About</StyledButton>
+      </Link>
     </div>
   );
 }
