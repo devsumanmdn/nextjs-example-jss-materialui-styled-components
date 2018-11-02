@@ -2,7 +2,7 @@
 
 ## How to use
 
-Download the example [or clone the repo](/#):
+Download the example [or clone the repo](#):
 
 ```bash
 curl https://codeload.github.com/devsumanmdn/nextjs-example-jss-materialui-styled-components/tar.gz/master | tar -xz
